@@ -1,82 +1,82 @@
 [
   {
     "number": "01",
-    "title": "Truth above all",
-    "titleHi": "सत्य ही परम धर्म है",
-    "summary": "Receive truth and renounce untruth in every part of life.",
-    "summaryHi": "जीवन के प्रत्येक क्षेत्र में सत्य को ग्रहण करना और असत्य का त्याग करना।",
-    "detail": "God is the efficient cause of all true knowledge and all that is known through knowledge. Truthful inquiry is the foundation of spiritual and civic life."
+    "title": "Source of True Knowledge",
+    "titleHi": "सत्य विद्या का आदिमूल",
+    "summary": "God is the efficient cause of all true knowledge and all that is known through knowledge.",
+    "summaryHi": "सब सत्यविद्या और जो पदार्थ विद्या से जाने जाते हैं, उन सबका आदिमूल परमेश्वर है।",
+    "detail": "The first principle anchors all inquiry in one formless, omniscient, and just Creator—free from idol worship and superstition."
   },
   {
     "number": "02",
-    "title": "Knowledge for all",
-    "titleHi": "सर्वव्यापक ज्ञान",
-    "summary": "Let knowledge be shared, pursued, and made accessible to every person.",
-    "summaryHi": "ज्ञान का प्रसार करना और बिना किसी भेदभाव के सभी के लिए सुलभ बनाना।",
-    "detail": "Arya Samaj champions universal literacy, Gurukul and modern education, and the removal of ignorance."
+    "title": "Nature of Ishwara",
+    "titleHi": "ईश्वर का स्वरूप",
+    "summary": "God is existent, intelligent, and blissful; formless, almighty, just, merciful, unborn, and worthy of worship.",
+    "summaryHi": "ईश्वर सच्चिदानन्दस्वरूप, निराकार, सर्वशक्तिमान, न्यायकारी, दयालु, अजन्मा, अनन्त, निर्विकार और सर्वव्यापक है।",
+    "detail": "Devotion in Arya Samaj is direct communion through Sandhya, contemplation, and righteous living rather than ritualized intermediaries."
   },
   {
     "number": "03",
-    "title": "Thoughtful discernment",
-    "titleHi": "वेद और विवेक",
-    "summary": "Hold every belief to the light of reason and the wisdom of the Vedas.",
-    "summaryHi": "प्रत्येक मान्यता को तर्क और वेदों के ज्ञान की कसौटी पर परखना।",
-    "detail": "The Vedas are the scripture of all true knowledge. Every Arya is called to read, teach, and reflect on them with clear reason."
+    "title": "Authority of the Vedas",
+    "titleHi": "वेद सत्यविद्या के पुस्तक",
+    "summary": "The Vedas are the scriptures of all true knowledge; it is the paramount duty of every Arya to read and teach them.",
+    "summaryHi": "वेद सब सत्यविद्याओं का पुस्तक है। वेद का पढ़ना-पढ़ाना और सुनना-सुनाना सब आर्यों का परम धर्म है।",
+    "detail": "Vedic study is open to every human being—across gender, birth, and nation—encouraging reasoned understanding over blind repetition."
   },
   {
     "number": "04",
-    "title": "Do what is right",
-    "titleHi": "धर्माचरण",
-    "summary": "Choose dharma: actions guided by truth, justice, and integrity.",
-    "summaryHi": "सत्य, न्याय और ईमानदारी से प्रेरित धर्मानुकूल आचरण चुनना।",
-    "detail": "All actions should be performed in accordance with Dharma—only after deliberating what is right and wrong."
+    "title": "Embrace Truth, Renounce Untruth",
+    "titleHi": "सत्य का ग्रहण",
+    "summary": "One should always be ready to accept truth and to renounce untruth.",
+    "summaryHi": "सत्य के ग्रहण करने और असत्य के छोड़ने में सर्वदा उद्यत रहना चाहिए।",
+    "detail": "Intellectual honesty requires testing every belief against evidence, logic, and Vedic ethics."
   },
   {
     "number": "05",
-    "title": "Act for the world",
-    "titleHi": "संसार का उपकार",
-    "summary": "Work for the physical, spiritual, and social wellbeing of all.",
-    "summaryHi": "सभी के शारीरिक, आत्मिक और सामाजिक कल्याण के लिए कार्य करना।",
-    "detail": "The primary object of Arya Samaj is to do good to the whole world—improving physical, spiritual, and social conditions alike."
+    "title": "Dharma in Every Action",
+    "titleHi": "धर्मानुसार कर्म",
+    "summary": "All acts ought to be performed in accordance with Dharma—after deliberating what is right and wrong.",
+    "summaryHi": "सब काम धर्मानुसार अर्थात सत्य और असत्य को विचार करके करने चाहिए।",
+    "detail": "Ethics precede convenience; every personal and public choice is weighed on the scale of truth and justice."
   },
   {
     "number": "06",
-    "title": "Care for one another",
-    "titleHi": "प्रेम और न्याय",
-    "summary": "Let our conduct be shaped by love, fairness, and respect.",
-    "summaryHi": "हमारा व्यवहार सभी के प्रति प्रेम, निष्पक्षता और सम्मान से प्रेरित हो।",
-    "detail": "Our conduct towards all should be guided by love, righteousness, and justice."
+    "title": "Good of the Whole World",
+    "titleHi": "संसार का उपकार",
+    "summary": "The primary object of Arya Samaj is to do good to the whole world—improving physical, spiritual, and social conditions.",
+    "summaryHi": "संसार का उपकार करना इस समाज का मुख्य उद्देश्य है अर्थात शारीरिक, आत्मिक और सामाजिक उन्नति करना।",
+    "detail": "True spirituality expresses itself in health, education, social harmony, and care for all creation."
   },
   {
     "number": "07",
-    "title": "Share in goodness",
-    "titleHi": "विद्या की वृद्धि",
-    "summary": "Support knowledge and prosperity through generous, responsible action.",
-    "summaryHi": "उदार और उत्तरदायी कर्मों द्वारा विद्या और समृद्धि को बढ़ाना।",
-    "detail": "We should dispel ignorance (Avidya) and promote knowledge (Vidya) for collective upliftment."
+    "title": "Love, Righteousness & Justice",
+    "titleHi": "प्रीति और धर्मानुसार वर्ताव",
+    "summary": "Our conduct towards all ought to be guided by love, righteousness, and justice.",
+    "summaryHi": "सबसे प्रीतिपूर्वक, धर्मानुसार और यथायोग्य वर्तना चाहिए।",
+    "detail": "Compassion is paired with fairness—honoring the dignity of every individual without prejudice."
   },
   {
     "number": "08",
-    "title": "Grow in wisdom",
-    "titleHi": "सबकी उन्नति",
-    "summary": "Pursue learning and help others grow, without distinction.",
-    "summaryHi": "बिना किसी भेदभाव के स्वयं सीखना और दूसरों की उन्नति में सहायक बनना।",
-    "detail": "No one should be content with promoting only their own good; each should look for their own good in the good of all."
+    "title": "Dispel Ignorance, Promote Vidya",
+    "titleHi": "अविद्या का नाश, विद्या की वृद्धि",
+    "summary": "We should dispel ignorance (Avidya) and promote true knowledge (Vidya).",
+    "summaryHi": "अविद्या का नाश और विद्या की वृद्धि करनी चाहिए।",
+    "detail": "This principle inspired hundreds of Gurukuls, schools, and colleges empowering boys and girls alike."
   },
   {
     "number": "09",
-    "title": "Honor every voice",
-    "titleHi": "व्यक्तिगत और सामाजिक नियम",
-    "summary": "Respect the freedom to seek truth and hold a considered view.",
-    "summaryHi": "सत्य की खोज की स्वतंत्रता और सामाजिक कल्याणकारी नियमों का सम्मान।",
-    "detail": "Everyone should abide by rules made for the general wellbeing of society, while remaining free in matters of personal conscience and wellbeing."
+    "title": "Collective Upliftment",
+    "titleHi": "सबकी उन्नति में अपनी उन्नति",
+    "summary": "No one should remain content with only their own upliftment, but see their own good in the good of all.",
+    "summaryHi": "प्रत्येक को अपनी ही उन्नति से संतुष्ट न रहना चाहिए, किंतु सबकी उन्नति में अपनी उन्नति समझनी चाहिए।",
+    "detail": "Personal prosperity is incomplete unless it strengthens the wellbeing of the wider community."
   },
   {
     "number": "10",
-    "title": "Serve with purpose",
-    "titleHi": "सामूहिक कल्याण",
-    "summary": "Put the good of all before narrow, individual gain.",
-    "summaryHi": "संकीर्ण व्यक्तिगत स्वार्थ से ऊपर उठकर सबके हित में सेवा करना।",
-    "detail": "Selfless service (Seva) binds individual spiritual growth with the harmony and dignity of the wider community."
+    "title": "Social Harmony & Conscience",
+    "titleHi": "सामाजिक एवं व्यक्तिगत नियम",
+    "summary": "Everyone should abide by rules made for the general wellbeing of society, while remaining free in personal wellbeing.",
+    "summaryHi": "सब मनुष्यों को सामाजिक सर्वहितकारी नियम पालने में परतंत्र रहना चाहिए और प्रत्येक हितकारी नियम में सब स्वतंत्र रहें।",
+    "detail": "Balances civic responsibility for the common good with individual freedom of conscience."
   }
 ]

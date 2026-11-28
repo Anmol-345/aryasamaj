@@ -37,20 +37,22 @@ export function EventCard({ event }: { event: EventItem }) {
   const day = String(dateObj.getDate()).padStart(2, '0')
 
   return (
-    <article className="event-card">
-      <div className="event-top">
-        <div className="event-date-badge" aria-label={event.date}>
-          <span>{month}</span>
-          <strong>{day}</strong>
-        </div>
-        <span className="event-category">{event.category}</span>
+    <article className="event-row-card">
+      <div className="event-date-badge" aria-label={event.date}>
+        <span>{month}</span>
+        <strong>{day}</strong>
       </div>
 
-      <h3>{lang === 'hi' ? event.titleHi : event.title}</h3>
-      <p className="event-time">{event.time}</p>
-      <p className="event-desc">{lang === 'hi' ? event.descriptionHi : event.description}</p>
+      <div className="event-row-body">
+        <div className="event-row-meta">
+          <span className="event-category">{event.category}</span>
+          <span className="event-time">{event.time}</span>
+        </div>
+        <h3>{lang === 'hi' ? event.titleHi : event.title}</h3>
+        <p className="event-desc">{lang === 'hi' ? event.descriptionHi : event.description}</p>
+      </div>
 
-      <div className="event-footer">
+      <div className="event-row-actions">
         <span className="event-location">
           <MapPin size={14} aria-hidden="true" />
           {lang === 'hi' ? event.locationHi : event.location}
@@ -59,7 +61,7 @@ export function EventCard({ event }: { event: EventItem }) {
           href={buildGoogleCalendarUrl(event)}
           target="_blank"
           rel="noreferrer"
-          className="event-cal-link"
+          className="btn btn-outline event-cal-btn"
         >
           <CalendarPlus size={15} aria-hidden="true" /> {t.events.addCalendar}
         </a>

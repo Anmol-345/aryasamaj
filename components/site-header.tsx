@@ -6,10 +6,10 @@ import { ArrowUpRight, ChevronDown, Globe, Menu, Radio, X } from 'lucide-react'
 import { useLanguage } from '@/lib/i18n'
 
 const serviceLinks = [
-  { label: 'Havan & Vedic rituals', labelHi: 'हवन एवं वैदिक अनुष्ठान', href: '#service-havan' },
-  { label: 'Vedic sanskar', labelHi: 'वैदिक संस्कार', href: '#service-sanskar' },
-  { label: 'Vedic marriage', labelHi: 'वैदिक विवाह', href: '#service-marriage' },
-  { label: 'Education & guidance', labelHi: 'शिक्षा एवं मार्गदर्शन', href: '#service-education' },
+  { label: 'Agnihotra Havan & Yajna', labelHi: 'अग्निहोत्र हवन एवं यज्ञ', href: '#service-havan' },
+  { label: 'Shodasha Vedic Sanskars', labelHi: 'षोडश वैदिक संस्कार', href: '#service-sanskar' },
+  { label: 'Vedic Vivah (Marriage)', labelHi: 'वैदिक विवाह संस्कार', href: '#service-marriage' },
+  { label: 'Swadhyaya & Gurukul Vidya', labelHi: 'स्वाध्याय एवं गुरुकुल विद्या', href: '#service-education' },
 ]
 
 export function SiteHeader() {
@@ -18,11 +18,10 @@ export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false)
   const [dropdownOpen, setDropdownOpen] = useState(false)
 
-  /* TODO: set NEXT_PUBLIC_YOUTUBE_LIVE=true when a live stream is active */
   const isLive = Boolean(process.env.NEXT_PUBLIC_YOUTUBE_CHANNEL_ID)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24)
+    const onScroll = () => setScrolled(window.scrollY > 32)
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
@@ -46,6 +45,21 @@ export function SiteHeader() {
 
   return (
     <header className={`site-header${scrolled ? ' is-scrolled' : ''}`}>
+      <div className="top-sacred-bar">
+        <div className="wrap top-sacred-inner">
+          <span>
+            {lang === 'hi'
+              ? 'स्थापना १० अप्रैल १८७५ · सार्वदेशिक आर्य प्रतिनिधि सभा, नई दिल्ली'
+              : 'EST. 10 APRIL 1875 · SARVADESHIK ARYA PRATINIDHI SABHA, NEW DELHI'}
+          </span>
+          <span>
+            {lang === 'hi'
+              ? 'दैनिक अग्निहोत्र हवन · प्रातः ०७:०० बजे'
+              : 'DAILY AGNIHOTRA HAVAN · 07:00 AM IST'}
+          </span>
+        </div>
+      </div>
+
       <div className="wrap header-inner">
         <a className="brand" href="#home" aria-label="Arya Samaj home" onClick={closeAll}>
           <span className="brand-mark" aria-hidden="true">

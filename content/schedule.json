@@ -1,33 +1,33 @@
 {
   "nextSession": {
-    "title": "Morning Sandhya & Havan",
-    "titleHi": "प्रातः संध्या एवं हवन",
+    "title": "Pratah Sandhya & Agnihotra Havan",
+    "titleHi": "प्रातः संध्या एवं अग्निहोत्र हवन",
     "time": "Daily · 07:00 AM IST"
   },
   "schedule": [
     {
       "time": "06:30 AM",
-      "title": "Pratah Sandhya & Gayatri Mantra",
-      "titleHi": "प्रातः संध्या एवं गायत्री मंत्र",
-      "description": "Silent meditation and Vedic Sandhya prayers."
+      "title": "Pratah Sandhya & Gayatri Upasana",
+      "titleHi": "प्रातः संध्या एवं गायत्री उपासना",
+      "description": "Brahmayajna meditation, pranayama, and Gayatri Mantra contemplation."
     },
     {
       "time": "07:00 AM",
-      "title": "Daily Agnihotra Havan",
+      "title": "Dainik Agnihotra Havan",
       "titleHi": "दैनिक अग्निहोत्र हवन",
-      "description": "Sacred fire offering with Rigveda and Yajurveda mantras."
+      "description": "Devayajna fire offering with pure samagri, ghee, and Vedic mantras."
     },
     {
       "time": "05:30 PM",
       "title": "Sayam Sandhya & Satsang",
       "titleHi": "सायं संध्या एवं सत्संग",
-      "description": "Evening hymns, reflection, and community discourse."
+      "description": "Evening prayer, bhajans, and reflection on Satyarth Prakash."
     },
     {
-      "time": "Sun · 09:00 AM",
-      "title": "Weekly Mahayajna & Pravachan",
-      "titleHi": "साप्ताहिक महायज्ञ एवं प्रवचन",
-      "description": "Weekly congregation, bhajans, and Vedic lecture."
+      "time": "Sun · 08:30 AM",
+      "title": "Ravivar Mahayajna & Ved Pravachan",
+      "titleHi": "रविवार महायज्ञ एवं वेद प्रवचन",
+      "description": "Weekly congregation, Vedic discourse, and community fellowship."
     }
   ],
   "recordings": [

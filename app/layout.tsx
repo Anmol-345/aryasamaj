@@ -1,20 +1,19 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Cormorant_Garamond, Inter, Noto_Serif_Devanagari } from 'next/font/google'
+import { Cinzel_Decorative, Epilogue, Noto_Serif_Devanagari } from 'next/font/google'
 import './globals.css'
 
-const cormorant = Cormorant_Garamond({
+const cinzel = Cinzel_Decorative({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  style: ['normal', 'italic'],
-  variable: '--font-cormorant',
+  weight: ['400', '700', '900'],
+  variable: '--font-cinzel',
   display: 'swap',
 })
 
-const inter = Inter({
+const epilogue = Epilogue({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-inter',
+  variable: '--font-epilogue',
   display: 'swap',
 })
 
@@ -45,7 +44,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'light',
-  themeColor: '#f8f5ef',
+  themeColor: '#5D2B00',
 }
 
 export default function RootLayout({
@@ -56,7 +55,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cormorant.variable} ${inter.variable} ${devanagari.variable}`}
+      className={`${cinzel.variable} ${epilogue.variable} ${devanagari.variable}`}
     >
       <body className="antialiased">
         {children}

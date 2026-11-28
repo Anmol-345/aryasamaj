@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import Image from 'next/image'
 import { motion, useReducedMotion } from 'framer-motion'
-import { ArrowRight, Play } from 'lucide-react'
+import { ArrowRight, BookOpen, Calendar, Flame, Play, Sparkles } from 'lucide-react'
 import { useLanguage } from '@/lib/i18n'
 
 const slides = [
@@ -41,6 +41,33 @@ export function HeroSlider() {
     return () => window.clearInterval(id)
   }, [paused, prefersReduced, next])
 
+  const quickPillars = [
+    {
+      icon: Flame,
+      href: '#live',
+      label: lang === 'hi' ? 'दैनिक अग्निहोत्र' : 'Daily Agnihotra',
+      sub: lang === 'hi' ? 'प्रातः ०७:०० बजे' : '07:00 AM IST Live',
+    },
+    {
+      icon: BookOpen,
+      href: '#principles',
+      label: lang === 'hi' ? 'दस नियम' : 'Das Niyam',
+      sub: lang === 'hi' ? 'आर्य समाज के १० सूत्र' : '10 Guiding Principles',
+    },
+    {
+      icon: Sparkles,
+      href: '#services',
+      label: lang === 'hi' ? 'षोडश संस्कार' : 'Vedic Sanskars',
+      sub: lang === 'hi' ? 'हवन, विवाह एवं विद्या' : 'Havan, Vivah & Vidya',
+    },
+    {
+      icon: Calendar,
+      href: '#events',
+      label: lang === 'hi' ? 'रविवार महायज्ञ' : 'Sunday Satsang',
+      sub: lang === 'hi' ? 'प्रातः ०८:३० बजे' : '08:30 AM IST Weekly',
+    },
+  ]
+
   return (
     <section
       className="hero"
@@ -70,20 +97,20 @@ export function HeroSlider() {
         <div className="hero-scrim" aria-hidden="true" />
       </div>
 
-      <div className="wrap hero-content">
+      <div className="wrap hero-inner-layout">
         <motion.div
+          className="hero-content"
           initial={prefersReduced ? false : { opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
         >
-          <div className="hero-om-row">
-            <span className="hero-om" aria-hidden="true">
-              ॐ
-            </span>
-            <p className="eyebrow light">
-              {t.hero.eyebrow} <span />
-            </p>
+          <div className="hero-crest" aria-hidden="true">
+            <span>ॐ</span>
           </div>
+
+          <p className="eyebrow light">
+            {t.hero.eyebrow} <span />
+          </p>
 
           <p className="hero-shloka" lang="sa">
             {t.hero.shloka}
@@ -106,6 +133,23 @@ export function HeroSlider() {
             </a>
           </div>
         </motion.div>
+
+        <div className="hero-ribbon" aria-label="Quick navigation highlights">
+          {quickPillars.map((item) => {
+            const Icon = item.icon
+            return (
+              <a key={item.href} href={item.href} className="hero-ribbon-card">
+                <span className="hero-ribbon-icon" aria-hidden="true">
+                  <Icon size={18} />
+                </span>
+                <div>
+                  <strong>{item.label}</strong>
+                  <small>{item.sub}</small>
+                </div>
+              </a>
+            )
+          })}
+        </div>
       </div>
     </section>
   )

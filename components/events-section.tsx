@@ -9,24 +9,24 @@ export function EventsSection() {
   const { t } = useLanguage()
 
   return (
-    <section className="events-section section-wrap" id="events" aria-labelledby="events-heading">
-      <div className="section-heading">
-        <div>
+    <section className="events-section" id="events" aria-labelledby="events-heading">
+      <div className="section-wrap">
+        <div className="section-heading section-heading-center">
           <p className="eyebrow">
             {t.events.eyebrow} <span />
           </p>
           <h2 id="events-heading">
             {t.events.headingStart} <em>{t.events.headingEm}</em>
           </h2>
+          <p className="heading-sub">{t.events.aside}</p>
         </div>
-        <p className="heading-aside">{t.events.aside}</p>
-      </div>
 
-      <Reveal className="events-grid">
-        {eventsData.map((event) => (
-          <EventCard key={event.id} event={event} />
-        ))}
-      </Reveal>
+        <Reveal className="events-stack">
+          {eventsData.map((event) => (
+            <EventCard key={event.id} event={event} />
+          ))}
+        </Reveal>
+      </div>
     </section>
   )
 }

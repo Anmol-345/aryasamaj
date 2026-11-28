@@ -1,46 +1,46 @@
 [
   {
     "id": "service-havan",
-    "title": "Havan & Vedic rituals",
-    "titleHi": "हवन एवं वैदिक अनुष्ठान",
-    "text": "Gather in prayer, reflection, and the sacred practice of Havan.",
-    "expect": "What to expect: 45–60 min mantra chanting, samagri offerings, and guided reflection.",
+    "title": "Agnihotra Havan & Yajna",
+    "titleHi": "अग्निहोत्र हवन एवं यज्ञ",
+    "text": "Purify the atmosphere and mind through sacred Vedic fire offerings and collective mantra chanting.",
+    "expect": "What to expect: 45–60 min ceremony with samagri, ghee offerings, Gayatri & Shanti Path.",
     "image": "/images/service-havan.jpg",
     "alt": "Devotees in traditional attire gathered around a sacred Havan kund"
   },
   {
     "id": "service-sanskar",
-    "title": "Vedic sanskar",
-    "titleHi": "वैदिक संस्कार",
-    "text": "Mark life’s milestones through thoughtful, meaningful Vedic ceremonies.",
-    "expect": "What to expect: Namkaran, Mundan, Yagyopaveet, and Griha Pravesh performed with clear meaning.",
+    "title": "Shodasha Vedic Sanskars",
+    "titleHi": "षोडश वैदिक संस्कार",
+    "text": "Celebrate life’s sacred milestones—from Namkaran and Annaprashan to Yagyopaveet and Griha Pravesh.",
+    "expect": "What to expect: Performed per Maharshi Dayananda’s Sanskar Vidhi with clear meaning.",
     "image": "/images/service-sanskar.jpg",
     "alt": "Elder guiding a young man during a traditional Yagyopaveet sanskar ceremony"
   },
   {
     "id": "service-marriage",
-    "title": "Vedic marriage",
-    "titleHi": "वैदिक विवाह",
-    "text": "Begin a lifelong journey rooted in commitment, values, and tradition.",
-    "expect": "What to expect: Dignified Saptapadi vows around the sacred Agni with translated mantras.",
+    "title": "Vedic Vivah (Marriage)",
+    "titleHi": "वैदिक विवाह संस्कार",
+    "text": "Begin married life with solemn Vedic vows, Saptapadi around the sacred Agni, and simplicity.",
+    "expect": "What to expect: Dignified ceremony with translated Sanskrit vows and zero ostentation.",
     "image": "/images/service-marriage.jpg",
     "alt": "Vedic Saptapadi marriage ceremony beside the sacred Agni Yajna fire"
   },
   {
     "id": "service-education",
-    "title": "Education & guidance",
-    "titleHi": "शिक्षा एवं मार्गदर्शन",
-    "text": "Explore Vedic wisdom, personal growth, and lifelong learning.",
-    "expect": "What to expect: Study circles on Vedas, Upanishads, Sanskrit, and Satyarth Prakash.",
+    "title": "Swadhyaya & Gurukul Vidya",
+    "titleHi": "स्वाध्याय एवं गुरुकुल विद्या",
+    "text": "Study the four Vedas, Upanishads, Sanskrit grammar, and Satyarth Prakash with Acharya guidance.",
+    "expect": "What to expect: Open study circles, Sandhya training, and youth character-building classes.",
     "image": "/images/service-education.jpg",
     "alt": "Ancient Rigveda manuscript written in Devanagari script"
   },
   {
     "id": "service-satsang",
-    "title": "Weekly Satsang & prayer",
-    "titleHi": "साप्ताहिक सत्संग एवं प्रार्थना",
-    "text": "Join communal chanting, Vedic discourse, and fellowship.",
-    "expect": "What to expect: Sunday morning bhajans, collective prayer, and community prasad.",
+    "title": "Ravivar Satsang & Pravachan",
+    "titleHi": "रविवार सत्संग एवं प्रवचन",
+    "text": "Gather every Sunday morning for soulful Vedic bhajans, Yajna, and ethical discourse.",
+    "expect": "What to expect: Open congregation for all families followed by community prasad.",
     "image": "/images/community-gathers.jpg",
     "alt": "Community members gathered together for an evening satsang"
   }

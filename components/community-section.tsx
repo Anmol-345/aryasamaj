@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import Image from 'next/image'
 import { ArrowRight, ChevronLeft, ChevronRight, X } from 'lucide-react'
+import { useLanguage } from '@/lib/i18n'
 
 const communityImages = [
   {
@@ -28,6 +29,7 @@ const communityImages = [
 ]
 
 export function CommunitySection() {
+  const { t } = useLanguage()
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
 
   const close = useCallback(() => setLightboxIndex(null), [])
@@ -55,47 +57,51 @@ export function CommunitySection() {
 
   return (
     <section className="community" id="community" aria-labelledby="community-heading">
-      <div className="community-head">
-        <p className="eyebrow light">
-          A PLACE TO BELONG <span />
-        </p>
-        <h2 id="community-heading">
-          Together in faith.
-          <br />
-          <em>United in service.</em>
-        </h2>
-        <p>
-          Meaningful traditions are made stronger when shared. Find space here to learn, reflect,
-          and contribute to the wellbeing of all.
-        </p>
-        <a className="text-link light-link" href="#contact">
-          Explore our community <ArrowRight size={16} aria-hidden="true" />
-        </a>
-      </div>
+      <div className="section-wrap">
+        <div className="community-top-header">
+          <div>
+            <p className="eyebrow light">
+              {t.community.eyebrow} <span />
+            </p>
+            <h2 id="community-heading">
+              {t.community.headingStart} <em>{t.community.headingEm}</em>
+            </h2>
+          </div>
+          <div className="community-top-aside">
+            <p>{t.community.copy}</p>
+            <a className="text-link light-link" href="#contact">
+              {t.community.cta} <ArrowRight size={16} aria-hidden="true" />
+            </a>
+          </div>
+        </div>
 
-      <div className="community-gallery">
-        {communityImages.map((item, i) => (
-          <figure className={`community-image community-image-${i + 1}`} key={item.image}>
-            <button
-              type="button"
-              className="community-trigger"
-              aria-label={`View photo: ${item.label}`}
-              onClick={() => setLightboxIndex(i)}
+        <div className="community-mosaic">
+          {communityImages.map((item, i) => (
+            <figure
+              className={`community-tile${i === 0 ? ' is-featured' : ''}`}
+              key={item.image}
             >
-              <Image
-                src={item.image}
-                alt={item.alt}
-                fill
-                sizes="(max-width: 680px) 50vw, 28vw"
-                loading="lazy"
-              />
-              <figcaption>
-                <span>0{i + 1}</span>
-                {item.label}
-              </figcaption>
-            </button>
-          </figure>
-        ))}
+              <button
+                type="button"
+                className="community-trigger"
+                aria-label={`View photo: ${item.label}`}
+                onClick={() => setLightboxIndex(i)}
+              >
+                <Image
+                  src={item.image}
+                  alt={item.alt}
+                  fill
+                  sizes={i === 0 ? '(max-width: 680px) 100vw, 60vw' : '(max-width: 680px) 100vw, 30vw'}
+                  loading="lazy"
+                />
+                <figcaption>
+                  <span>0{i + 1}</span>
+                  {item.label}
+                </figcaption>
+              </button>
+            </figure>
+          ))}
+        </div>
       </div>
 
       {activeItem && lightboxIndex !== null && (
@@ -129,16 +135,12 @@ export function CommunitySection() {
 
           <div className="lightbox-stage" onClick={(e) => e.stopPropagation()}>
             <div className="lightbox-image-wrap">
-              <Image
-                src={activeItem.image}
-                alt={activeItem.alt}
-                fill
-                sizes="90vw"
-                priority
-              />
+              <Image src={activeItem.image} alt={activeItem.alt} fill sizes="90vw" priority />
             </div>
             <p className="lightbox-caption">
-              <span>0{lightboxIndex + 1} / 0{communityImages.length}</span>
+              <span>
+                0{lightboxIndex + 1} / 0{communityImages.length}
+              </span>
               {activeItem.label}
             </p>
           </div>

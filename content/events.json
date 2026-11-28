@@ -1,41 +1,41 @@
 [
   {
-    "id": "sunday-havan-satsang",
-    "title": "Weekly Sunday Havan & Satsang",
-    "titleHi": "साप्ताहिक रविवार हवन एवं सत्संग",
+    "id": "sunday-mahayajna-satsang",
+    "title": "Weekly Sunday Mahayajna & Pravachan",
+    "titleHi": "साप्ताहिक रविवार महायज्ञ एवं प्रवचन",
     "date": "2026-12-06",
-    "time": "09:00 AM – 11:30 AM IST",
+    "time": "08:30 AM – 11:30 AM IST",
     "location": "Maharishi Dayanand Bhawan, New Delhi",
     "locationHi": "महर्षि दयानंद भवन, नई दिल्ली",
-    "category": "Weekly Gathering",
-    "description": "Communal Agnihotra Havan, Vedic bhajans, and discourse on Satyarth Prakash. Open to all families.",
-    "descriptionHi": "सामूहिक अग्निहोत्र हवन, वैदिक भजन एवं सत्यार्थ प्रकाश पर प्रवचन। सभी परिवारों के लिए खुला।",
-    "durationMinutes": 150
+    "category": "Weekly Yajna",
+    "description": "Communal Agnihotra Havan with Yajurveda mantras, Vedic bhajans, and discourse on Satyarth Prakash followed by Rishi Langar.",
+    "descriptionHi": "यजुर्वेद मंत्रों के साथ सामूहिक अग्निहोत्र हवन, वैदिक भजन एवं सत्यार्थ प्रकाश पर प्रवचन।",
+    "durationMinutes": 180
   },
   {
-    "id": "vedic-youth-study",
-    "title": "Vedic Wisdom & Youth Study Circle",
-    "titleHi": "वैदिक ज्ञान एवं युवा स्वाध्याय मंडल",
+    "id": "ved-prachar-swadhyaya",
+    "title": "Ved Prachar & Youth Swadhyaya Circle",
+    "titleHi": "वेद प्रचार एवं युवा स्वाध्याय संगोष्ठी",
     "date": "2026-12-13",
-    "time": "10:30 AM – 12:00 PM IST",
+    "time": "10:00 AM – 12:00 PM IST",
     "location": "Arya Samaj Mandir Hall / Online",
     "locationHi": "आर्य समाज मंदिर सभागार / ऑनलाइन",
-    "category": "Education",
-    "description": "Interactive study of Upanishadic mantras, Sanskrit pronunciation, and applying Arya Samaj principles in daily life.",
-    "descriptionHi": "उपनिषद मंत्रों, संस्कृत उच्चारण और दैनिक जीवन में आर्य समाज के नियमों के अभ्यास पर संवादात्मक सत्र।",
-    "durationMinutes": 90
+    "category": "Swadhyaya",
+    "description": "Guided reading of Ishopanishad, Sanskrit Sandhya pronunciation workshop, and practical dialogue on Das Niyam.",
+    "descriptionHi": "ईशोपनिषद स्वाध्याय, संस्कृत संध्या उच्चारण अभ्यास और दस नियमों पर संवाद।",
+    "durationMinutes": 120
   },
   {
-    "id": "anna-daan-seva",
-    "title": "Monthly Anna Daan & Seva Drive",
-    "titleHi": "मासिक अन्न दान एवं सेवा अभियान",
+    "id": "rishi-seva-annadaan",
+    "title": "Panch Mahayajna Seva & Anna Daan",
+    "titleHi": "पंचमहायज्ञ सेवा एवं अन्न दान शिविर",
     "date": "2026-12-20",
-    "time": "08:30 AM – 01:00 PM IST",
-    "location": "Asaf Ali Road Campus & Community",
-    "locationHi": "आसफ अली रोड परिसर एवं समुदाय",
-    "category": "Seva",
-    "description": "Volunteer-led preparation and distribution of nutritious meals and educational kits for local families.",
-    "descriptionHi": "स्वयंसेवकों द्वारा स्थानीय परिवारों के लिए पौष्टिक भोजन और शैक्षिक सामग्री का वितरण।",
-    "durationMinutes": 270
+    "time": "08:00 AM – 01:00 PM IST",
+    "location": "Asaf Ali Road Campus, New Delhi",
+    "locationHi": "आसफ अली रोड परिसर, नई दिल्ली",
+    "category": "Lok-Kalyan",
+    "description": "Atithiyajna food service, distribution of Vedic literature, and winter educational kits for local students.",
+    "descriptionHi": "अतिथियज्ञ अन्न सेवा, वैदिक साहित्य वितरण एवं विद्यार्थियों के लिए शैक्षिक सामग्री वितरण।",
+    "durationMinutes": 300
   }
 ]
