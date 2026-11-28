@@ -1,0 +1,53 @@
+{
+  "nextSession": {
+    "title": "Morning Sandhya & Havan",
+    "titleHi": "प्रातः संध्या एवं हवन",
+    "time": "Daily · 07:00 AM IST"
+  },
+  "schedule": [
+    {
+      "time": "06:30 AM",
+      "title": "Pratah Sandhya & Gayatri Mantra",
+      "titleHi": "प्रातः संध्या एवं गायत्री मंत्र",
+      "description": "Silent meditation and Vedic Sandhya prayers."
+    },
+    {
+      "time": "07:00 AM",
+      "title": "Daily Agnihotra Havan",
+      "titleHi": "दैनिक अग्निहोत्र हवन",
+      "description": "Sacred fire offering with Rigveda and Yajurveda mantras."
+    },
+    {
+      "time": "05:30 PM",
+      "title": "Sayam Sandhya & Satsang",
+      "titleHi": "सायं संध्या एवं सत्संग",
+      "description": "Evening hymns, reflection, and community discourse."
+    },
+    {
+      "time": "Sun · 09:00 AM",
+      "title": "Weekly Mahayajna & Pravachan",
+      "titleHi": "साप्ताहिक महायज्ञ एवं प्रवचन",
+      "description": "Weekly congregation, bhajans, and Vedic lecture."
+    }
+  ],
+  "recordings": [
+    {
+      "id": "rec-1",
+      "title": "Pujniya Prabhu Hamare — Yagya Prarthna & Havan Prayer",
+      "titleHi": "पूजनीय प्रभु हमारे — यज्ञ प्रार्थना एवं हवन भजन",
+      "youtubeVideoId": "g6KcPL8Taqg"
+    },
+    {
+      "id": "rec-2",
+      "title": "Gurukul Kurukshetra — Arya Samaj Vedic Education",
+      "titleHi": "गुरुकुल कुरुक्षेत्र — आर्य समाज वैदिक शिक्षा",
+      "youtubeVideoId": "l_dHsqYFgkQ"
+    },
+    {
+      "id": "rec-3",
+      "title": "Gurukul Discourse — Arya Samaj Heritage",
+      "titleHi": "गुरुकुल उद्बोधन — आर्य समाज परंपरा",
+      "youtubeVideoId": "0W6Kp0EehtM"
+    }
+  ]
+}

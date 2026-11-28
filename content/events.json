@@ -1,0 +1,41 @@
+[
+  {
+    "id": "sunday-havan-satsang",
+    "title": "Weekly Sunday Havan & Satsang",
+    "titleHi": "साप्ताहिक रविवार हवन एवं सत्संग",
+    "date": "2026-12-06",
+    "time": "09:00 AM – 11:30 AM IST",
+    "location": "Maharishi Dayanand Bhawan, New Delhi",
+    "locationHi": "महर्षि दयानंद भवन, नई दिल्ली",
+    "category": "Weekly Gathering",
+    "description": "Communal Agnihotra Havan, Vedic bhajans, and discourse on Satyarth Prakash. Open to all families.",
+    "descriptionHi": "सामूहिक अग्निहोत्र हवन, वैदिक भजन एवं सत्यार्थ प्रकाश पर प्रवचन। सभी परिवारों के लिए खुला।",
+    "durationMinutes": 150
+  },
+  {
+    "id": "vedic-youth-study",
+    "title": "Vedic Wisdom & Youth Study Circle",
+    "titleHi": "वैदिक ज्ञान एवं युवा स्वाध्याय मंडल",
+    "date": "2026-12-13",
+    "time": "10:30 AM – 12:00 PM IST",
+    "location": "Arya Samaj Mandir Hall / Online",
+    "locationHi": "आर्य समाज मंदिर सभागार / ऑनलाइन",
+    "category": "Education",
+    "description": "Interactive study of Upanishadic mantras, Sanskrit pronunciation, and applying Arya Samaj principles in daily life.",
+    "descriptionHi": "उपनिषद मंत्रों, संस्कृत उच्चारण और दैनिक जीवन में आर्य समाज के नियमों के अभ्यास पर संवादात्मक सत्र।",
+    "durationMinutes": 90
+  },
+  {
+    "id": "anna-daan-seva",
+    "title": "Monthly Anna Daan & Seva Drive",
+    "titleHi": "मासिक अन्न दान एवं सेवा अभियान",
+    "date": "2026-12-20",
+    "time": "08:30 AM – 01:00 PM IST",
+    "location": "Asaf Ali Road Campus & Community",
+    "locationHi": "आसफ अली रोड परिसर एवं समुदाय",
+    "category": "Seva",
+    "description": "Volunteer-led preparation and distribution of nutritious meals and educational kits for local families.",
+    "descriptionHi": "स्वयंसेवकों द्वारा स्थानीय परिवारों के लिए पौष्टिक भोजन और शैक्षिक सामग्री का वितरण।",
+    "durationMinutes": 270
+  }
+]

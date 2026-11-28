@@ -1,0 +1,47 @@
+[
+  {
+    "id": "service-havan",
+    "title": "Havan & Vedic rituals",
+    "titleHi": "हवन एवं वैदिक अनुष्ठान",
+    "text": "Gather in prayer, reflection, and the sacred practice of Havan.",
+    "expect": "What to expect: 45–60 min mantra chanting, samagri offerings, and guided reflection.",
+    "image": "/images/service-havan.jpg",
+    "alt": "Devotees in traditional attire gathered around a sacred Havan kund"
+  },
+  {
+    "id": "service-sanskar",
+    "title": "Vedic sanskar",
+    "titleHi": "वैदिक संस्कार",
+    "text": "Mark life’s milestones through thoughtful, meaningful Vedic ceremonies.",
+    "expect": "What to expect: Namkaran, Mundan, Yagyopaveet, and Griha Pravesh performed with clear meaning.",
+    "image": "/images/service-sanskar.jpg",
+    "alt": "Elder guiding a young man during a traditional Yagyopaveet sanskar ceremony"
+  },
+  {
+    "id": "service-marriage",
+    "title": "Vedic marriage",
+    "titleHi": "वैदिक विवाह",
+    "text": "Begin a lifelong journey rooted in commitment, values, and tradition.",
+    "expect": "What to expect: Dignified Saptapadi vows around the sacred Agni with translated mantras.",
+    "image": "/images/service-marriage.jpg",
+    "alt": "Vedic Saptapadi marriage ceremony beside the sacred Agni Yajna fire"
+  },
+  {
+    "id": "service-education",
+    "title": "Education & guidance",
+    "titleHi": "शिक्षा एवं मार्गदर्शन",
+    "text": "Explore Vedic wisdom, personal growth, and lifelong learning.",
+    "expect": "What to expect: Study circles on Vedas, Upanishads, Sanskrit, and Satyarth Prakash.",
+    "image": "/images/service-education.jpg",
+    "alt": "Ancient Rigveda manuscript written in Devanagari script"
+  },
+  {
+    "id": "service-satsang",
+    "title": "Weekly Satsang & prayer",
+    "titleHi": "साप्ताहिक सत्संग एवं प्रार्थना",
+    "text": "Join communal chanting, Vedic discourse, and fellowship.",
+    "expect": "What to expect: Sunday morning bhajans, collective prayer, and community prasad.",
+    "image": "/images/community-gathers.jpg",
+    "alt": "Community members gathered together for an evening satsang"
+  }
+]

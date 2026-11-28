@@ -1,100 +1,78 @@
-import Image from 'next/image'
-import { ArrowRight, ArrowUpRight } from 'lucide-react'
+'use client'
 
-const services = [
-  {
-    id: 'service-havan',
-    title: 'Havan & Vedic rituals',
-    text: 'Gather in prayer, reflection, and the sacred practice of Havan.',
-    image: '/images/service-havan.jpg',
-    alt: 'Devotees in traditional attire gathered around a sacred Havan kund',
-  },
-  {
-    id: 'service-sanskar',
-    title: 'Vedic sanskar',
-    text: 'Mark life’s milestones through thoughtful, meaningful Vedic ceremonies.',
-    image: '/images/service-sanskar.jpg',
-    alt: 'Elder guiding a young man during a traditional Yagyopaveet sanskar ceremony',
-  },
-  {
-    id: 'service-marriage',
-    title: 'Vedic marriage',
-    text: 'Begin a lifelong journey rooted in commitment, values, and tradition.',
-    image: '/images/service-marriage.jpg',
-    alt: 'Vedic Saptapadi marriage ceremony beside the sacred Agni Yajna fire',
-  },
-  {
-    id: 'service-education',
-    title: 'Education & guidance',
-    text: 'Explore Vedic wisdom, personal growth, and lifelong learning.',
-    image: '/images/service-education.jpg',
-    alt: 'Ancient Rigveda manuscript written in Devanagari script',
-  },
-  {
-    id: 'service-satsang',
-    title: 'Weekly Satsang & prayer',
-    text: 'Join communal chanting, Vedic discourse, and fellowship.',
-    image: '/images/community-gathers.jpg',
-    alt: 'Community members gathered together for an evening satsang',
-  },
-]
+import { useState } from 'react'
+import { ArrowRight, ArrowUpRight } from 'lucide-react'
+import servicesData from '@/content/services.json'
+import { useLanguage } from '@/lib/i18n'
+import { ServiceCard } from './service-card'
+import { EnquiryModal } from './enquiry-modal'
 
 export function ServicesSection() {
+  const { t } = useLanguage()
+  const [modalOpen, setModalOpen] = useState(false)
+  const [selectedCeremony, setSelectedCeremony] = useState('Havan & Vedic rituals')
+
+  const openEnquiry = (ceremony: string) => {
+    setSelectedCeremony(ceremony)
+    setModalOpen(true)
+  }
+
   return (
     <section className="services section-wrap" id="services" aria-labelledby="services-heading">
       <div className="section-heading service-heading">
         <div>
           <p className="eyebrow">
-            PRACTICE &amp; PARTICIPATION <span />
+            {t.services.eyebrow} <span />
           </p>
           <h2 id="services-heading">
-            Traditions that give
+            {t.services.headingStart}
             <br />
-            <em>life meaning.</em>
+            <em>{t.services.headingEm}</em>
           </h2>
         </div>
-        <a className="under-link" href="#contact">
-          Ask about a ceremony <ArrowRight size={16} aria-hidden="true" />
-        </a>
+        <button
+          type="button"
+          className="under-link under-link-btn"
+          onClick={() => openEnquiry('Havan & Vedic rituals')}
+        >
+          {t.services.ctaTop} <ArrowRight size={16} aria-hidden="true" />
+        </button>
       </div>
 
       <div className="service-grid">
-        {services.map((service, i) => (
-          <a className="service-item" id={service.id} href="#contact" key={service.title}>
-            <div className="service-photo">
-              <Image
-                src={service.image}
-                alt={service.alt}
-                fill
-                sizes="(max-width: 680px) 100vw, (max-width: 900px) 50vw, 33vw"
-                loading="lazy"
-              />
-              <span className="service-index">0{i + 1}</span>
-              <span className="service-arrow" aria-hidden="true">
-                <ArrowUpRight size={18} />
-              </span>
-            </div>
-            <div className="service-meta">
-              <h3>{service.title}</h3>
-              <p>{service.text}</p>
-            </div>
-          </a>
+        {servicesData.map((service, i) => (
+          <ServiceCard
+            key={service.id}
+            service={service}
+            index={i}
+            onEnquire={openEnquiry}
+          />
         ))}
 
-        <a className="service-item service-cta-card" href="#contact">
+        <div className="service-item service-cta-card">
           <div className="service-cta-inner">
             <span className="service-cta-num">06</span>
             <h3>Ask about a ceremony</h3>
             <p>
-              Planning a Havan, Namkaran, Yagyopaveet, or Vedic marriage? Connect with our team to
-              arrange a ceremony or visit.
+              Planning a Havan, Namkaran, Yagyopaveet, or Vedic marriage? Send an enquiry to
+              coordinate dates and samagri with our Mandir team.
             </p>
-            <span className="service-cta-link">
-              Get in touch <ArrowUpRight size={16} aria-hidden="true" />
-            </span>
+            <button
+              type="button"
+              className="btn btn-dark"
+              onClick={() => openEnquiry('Havan & Vedic rituals')}
+            >
+              {t.services.enquire} <ArrowUpRight size={16} aria-hidden="true" />
+            </button>
           </div>
-        </a>
+        </div>
       </div>
+
+      <EnquiryModal
+        open={modalOpen}
+        defaultCeremony={selectedCeremony}
+        onClose={() => setModalOpen(false)}
+      />
     </section>
   )
 }

@@ -2,7 +2,9 @@
 
 import { useCallback, useEffect, useState } from 'react'
 import Image from 'next/image'
-import { ArrowDown, ArrowRight, ArrowUpRight } from 'lucide-react'
+import { motion, useReducedMotion } from 'framer-motion'
+import { ArrowRight, Play } from 'lucide-react'
+import { useLanguage } from '@/lib/i18n'
 
 const slides = [
   {
@@ -24,27 +26,20 @@ const slides = [
 ]
 
 export function HeroSlider() {
+  const { lang, t } = useLanguage()
+  const prefersReduced = useReducedMotion()
   const [active, setActive] = useState(0)
   const [paused, setPaused] = useState(false)
-  const [reducedMotion, setReducedMotion] = useState(false)
-
-  useEffect(() => {
-    const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
-    setReducedMotion(mq.matches)
-    const onChange = (e: MediaQueryListEvent) => setReducedMotion(e.matches)
-    mq.addEventListener('change', onChange)
-    return () => mq.removeEventListener('change', onChange)
-  }, [])
 
   const next = useCallback(() => {
     setActive((prev) => (prev + 1) % slides.length)
   }, [])
 
   useEffect(() => {
-    if (paused || reducedMotion) return
-    const id = window.setInterval(next, 6000)
+    if (paused || prefersReduced) return
+    const id = window.setInterval(next, 6500)
     return () => window.clearInterval(id)
-  }, [paused, reducedMotion, next])
+  }, [paused, prefersReduced, next])
 
   return (
     <section
@@ -54,8 +49,6 @@ export function HeroSlider() {
       aria-roledescription="carousel"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
-      onFocus={() => setPaused(true)}
-      onBlur={() => setPaused(false)}
     >
       <div className="hero-media">
         {slides.map((slide, index) => (
@@ -78,34 +71,41 @@ export function HeroSlider() {
       </div>
 
       <div className="wrap hero-content">
-        <p className="eyebrow light">
-          A LIVING VEDIC TRADITION <span />
-        </p>
-        <h1 id="hero-heading">
-          Rediscover the
-          <br />
-          <em>light of truth.</em>
-        </h1>
-        <p className="hero-copy">
-          Guided by the timeless wisdom of the Vedas, we come together to cultivate truth,
-          knowledge, compassion, and a life of purpose.
-        </p>
-        <div className="hero-actions">
-          <a className="btn btn-primary" href="#about">
-            Explore our mission <ArrowRight size={16} aria-hidden="true" />
-          </a>
-          <a className="btn btn-ghost" href="#contact">
-            Visit Arya Samaj <ArrowUpRight size={16} aria-hidden="true" />
-          </a>
-        </div>
-      </div>
+        <motion.div
+          initial={prefersReduced ? false : { opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <div className="hero-om-row">
+            <span className="hero-om" aria-hidden="true">
+              ॐ
+            </span>
+            <p className="eyebrow light">
+              {t.hero.eyebrow} <span />
+            </p>
+          </div>
 
-      <div className="hero-bottom">
-        <span>ANCIENT WISDOM · MODERN LIFE</span>
-        <a href="#pillars" aria-label="Scroll to our pillars">
-          <ArrowDown size={17} aria-hidden="true" />
-        </a>
-        <span>EST. IN THE SPIRIT OF REFORM</span>
+          <p className="hero-shloka" lang="sa">
+            {t.hero.shloka}
+          </p>
+
+          <h1 id="hero-heading">
+            {t.hero.titleStart}
+            <br />
+            <em>{t.hero.titleEm}</em>
+          </h1>
+
+          <p className="hero-copy">{t.hero.copy}</p>
+
+          <div className="hero-actions">
+            <a className="btn btn-primary" href="#live">
+              <Play size={15} aria-hidden="true" /> {t.hero.ctaLive}
+            </a>
+            <a className="btn btn-ghost" href="#about">
+              {t.hero.ctaMission} <ArrowRight size={16} aria-hidden="true" />
+            </a>
+          </div>
+        </motion.div>
       </div>
     </section>
   )
